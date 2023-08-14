@@ -202,7 +202,7 @@ var employee_tracker = function () {
                       }
                   }
 
-                  db.query(`INSERT INTO employee (first_name, last_name, role_id, manager_id) VALUES (?, ?, ?, ?)`, [answers.firstName, answers.lastName, role.id, answers.manager.slice(0, 2)], (err, result) => {
+                  db.query(`INSERT INTO employee (first_name, last_name, role_id, manager_id) VALUES (?, ?, ?, ?)`, [answers.firstName, answers.lastName, role.id, answers.manager.substring(0, answers.manager.indexOf(' '))], (err, result) => {
                       if (err) throw err;
                       console.log(`Added ${answers.firstName} ${answers.lastName} to the database.`)
                       employee_tracker();
