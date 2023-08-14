@@ -151,7 +151,7 @@ var employee_tracker = function () {
           });
       } else if (answers.prompt === 'Add Employee') {
           // Calling the database to acquire the roles and managers
-          db.query(`SELECT employee.id as 'emp_id', employee.*,role.* FROM employee, role`, (err, result) => {
+          db.query(`SELECT employee.id as 'emp_id', employee.*,role.* FROM employee, role where manager_id is NULL`, (err, result) => {
               if (err) throw err;
 
               inquirer.prompt([
