@@ -35,7 +35,7 @@ The following image shows the web application's appearance and functionality:
 ## Command line Screenshot
 Command line screenshot displaying the set of option that would be available when running the app.
 
-<img width="800" alt="Command line screenshot displaying the set of option that would be available when running the app" src="./assets/images/command-line.png">
+<img width="800" alt="Command line screenshot displaying the set of option that would be available when running the app" src="./assets/images/insomnia.png">
 
 ## Command line file example video
 Youtube video that go through the options available for the user when running the app via command box.
